@@ -21,7 +21,7 @@
 
                         <th scope="col">date</th>
                         <th scope="col">etat</th>
-                        <th scope="col"></th>
+                        <th scope="col">details</th>
                         <th scope="col"></th>
 
                     </tr>
