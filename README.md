@@ -8,6 +8,8 @@
 2. pour les commandes SQL (PHP-MySQLi-Database-Class):
 - https://github.com/ThingEngineer/PHP-MySQLi-Database-Class#delete-query
 
+3. pour la validation du formulaire (jquery-validation) :
+- https://github.com/jquery-validation/jquery-validation
 
 ## Screenshots :
 * Page d'ajout des messages et les message approuvés qui apparaissent en bas.

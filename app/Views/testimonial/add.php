@@ -1,99 +1,99 @@
 <?php include(VIEWS . 'inc' . DS . 'header.php'); ?>
 <style>
     /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
 
-/*===== VARIABLES CSS =====*/
-:root {
-    /*===== Colors =====*/
-    --first-color: #272A3A;
-    --first-color-light: #8A8EAA;
-    --first-color-lighten: #F8F8FC;
+    /*===== VARIABLES CSS =====*/
+    :root {
+        /*===== Colors =====*/
+        --first-color: #272A3A;
+        --first-color-light: #8A8EAA;
+        --first-color-lighten: #F8F8FC;
 
-    /*===== Font and typography =====*/
-    --body-font: 'Ubuntu', sans-serif;
-    --normal-font-size: 1rem;
-    --smaller-font-size: .813rem;
-}
+        /*===== Font and typography =====*/
+        --body-font: 'Ubuntu', sans-serif;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .813rem;
+    }
 
-/*===== BASE =====*/
-*,
-::before,
-::after {
-    box-sizing: border-box;
-}
+    /*===== BASE =====*/
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--body-font);
-    /* background-color: var(--first-color-lighten); */
-}
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--body-font);
+        /* background-color: var(--first-color-lighten); */
+    }
 
-h1 {
-    margin: 0;
-}
+    h1 {
+        margin: 0;
+    }
 
-a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-/*===== DRAG and DROP =====*/
-.drop,
-.drop__container {
-    display: flex;
-}
+    /*===== DRAG and DROP =====*/
+    .drop,
+    .drop__container {
+        display: flex;
+    }
 
-.drop {
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-}
+    .drop {
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
 
-.drop__container {
-    row-gap: 1rem;
-    padding: 2rem;
-    box-shadow: 4px 4px 40px #FFF;
-}
+    .drop__container {
+        row-gap: 1rem;
+        padding: 2rem;
+        box-shadow: 4px 4px 40px #FFF;
+    }
 
-.drop__card {
-    width: 260px;
-    justify-content: space-between;
-    padding: .75rem 1.25rem .75rem .75rem;
-    margin: 1rem;
-    background-color: var(--first-color-lighten);
-    box-shadow: 4px 4px 16px #E1E1E1, -2px -2px 16px #E1E1E1;
-    border-radius: 2.5rem;
-}
+    .drop__card {
+        width: 260px;
+        justify-content: space-between;
+        padding: .75rem 1.25rem .75rem .75rem;
+        margin: 1rem;
+        background-color: var(--first-color-lighten);
+        box-shadow: 4px 4px 16px #E1E1E1, -2px -2px 16px #E1E1E1;
+        border-radius: 2.5rem;
+    }
 
-.drop__name {
-    font-size: var(--normal-font-size);
-    color: var(--first-color);
-    font-weight: 500;
-    margin: 10;
-}
+    .drop__name {
+        font-size: var(--normal-font-size);
+        color: var(--first-color);
+        font-weight: 500;
+        margin: 10;
+    }
 
-.drop__profession {      
-    font-size: var(--smaller-font-size);
-    color: var(--first-color-light);
-}
+    .drop__profession {
+        font-size: var(--smaller-font-size);
+        color: var(--first-color-light);
+    }
 
 
 
-/* Class name for the chosen item */
-.sortable-chosen {
-    box-shadow: 8px 8px 32px #E1E1E1;
-}
+    /* Class name for the chosen item */
+    .sortable-chosen {
+        box-shadow: 8px 8px 32px #E1E1E1;
+    }
 
-/* Class name for the dragging item */
-.sortable-drag {
-    opacity: 0;
-}
+    /* Class name for the dragging item */
+    .sortable-drag {
+        opacity: 0;
+    }
 </style>
 
 
@@ -146,7 +146,7 @@ img {
         <?php foreach ($testimonials as $key) : ?>
             <div class="drop__card">
                 <div class="drop__data">
-                    <img src="<?php echo BURL . 'uploads/'.$key['photo']; ?>"class="rounded-circle" width="70" style="margin-bottom:10px;">
+                    <img src="<?php echo BURL . 'uploads/' . $key['photo']; ?>" class="rounded-circle" width="70" style="margin-bottom:10px;">
                     <div>
                         <h1 class="drop__name"><?php echo $key['titre'] ?></h1>
                         <span class="drop__profession"><?php echo $key['message'] ?></span>
@@ -169,7 +169,7 @@ img {
         animation: 350,
         chosenClass: "sortable-chosen",
         dragClass: "sortable-drag",
-        direction:'horizontal',
+        direction: 'horizontal',
         store: {
             // We keep the order of the list
             set: (sortable) => {
@@ -183,7 +183,7 @@ img {
                 return order ? order.split('|') : []
             }
         }
-    
+
     });
 </script>
 

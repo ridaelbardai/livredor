@@ -2,10 +2,12 @@
 //require_once(APP."Config/helper.php");
 class TestimonialController
 {
-
+    //constructeur
     public function __construct()
     {
     }
+
+    
     public function index()
     {
         $db = new Testimonial();
