@@ -12,7 +12,7 @@
 ## Screenshots :
 * Page d'ajout des messages et les message approuvés qui apparaissent en bas.
 ![ajout d'un message](https://github.com/ridaelbardai/livredor/blob/master/testimonials.png)
-* liste de tout les messages.
+* liste de tous les messages.
 ![ajout d'un message](https://github.com/ridaelbardai/livredor/blob/master/list.png)
 * information sur un message prècis(titre,message,photo,date) 
 où un administrateur peut confirmer un message !
