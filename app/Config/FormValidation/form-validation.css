@@ -1,0 +1,11 @@
+label.error.fail-alert {
+    border: 2px solid red;
+    border-radius: 4px;
+    line-height: 1;
+    padding: 2px 0 6px 6px;
+    background: #ffe6eb;
+    }
+input.valid.success-alert {
+    border: 2px solid #4CAF50;
+    color: green;
+    }
