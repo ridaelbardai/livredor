@@ -12,7 +12,7 @@
 - https://github.com/jquery-validation/jquery-validation
 --------------------------
 ## Screenshots :
-* Page d'ajout des messages et les message approuvés qui apparaissent en bas.
+* Page d'ajout des messages et les messages approuvés qui apparaissent en bas.
 ![ajout d'un message](https://github.com/ridaelbardai/livredor/blob/master/testimonials.png)
 * liste de tous les messages.
 ![ajout d'un message](https://github.com/ridaelbardai/livredor/blob/master/list.png)
