@@ -20,6 +20,6 @@
 où un administrateur peut confirmer un message !
 ![ajout d'un message](https://github.com/ridaelbardai/livredor/blob/master/infos.png)
 * Regle5 : drag and drop
-* image GIF
+image GIF
 ![ajout d'un message](https://github.com/ridaelbardai/livredor/blob/master/drag%26drop.gif)
 
