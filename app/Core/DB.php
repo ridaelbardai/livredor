@@ -7,16 +7,13 @@ class DB
     protected $db;
     public function connect()
     {
-        $database = new MysqliDb (HOST, USER, PASS, DBNAME);
+        $database = new MysqliDb(HOST, USER, PASS, DBNAME);
 
-        if (!$database->connect()) 
-        {
+        try {
             $this->db = $database;
             return $this->db;
-        }
-        else
-        {
-            echo "error database";
+        } catch (\Throwable $th) {
+            $th->getMessage();
         }
     }
 }

@@ -10,8 +10,8 @@ define("VIEWS",APP.'Views'.DS);
 define("LIBS",APP.'Libs'.DS);
 define("UPLOADS",ROOT_PATH.'public'.DS.'uploads'.DS);
 
-require_once(CONFIG.'config.php');
-require_once(CONFIG.'helpers.php');
+require(CONFIG.'config.php');
+require(CONFIG.'helpers.php');
 
 
 
